@@ -34,7 +34,7 @@ for i = 1:n
 	deviation = std(X(:, i));
 
 	X_norm(:, i) = X_norm(:, i) - avg;
-	X_norm(:, i) = X_norm(:, i) / deviation;
+	X_norm(:, i) = X_norm(:, i) ./ deviation;
 
 	mu(i) = avg;
 	sigma(i) = deviation;
